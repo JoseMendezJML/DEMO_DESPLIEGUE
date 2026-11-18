@@ -25,7 +25,7 @@ jobs:
         shell: pwsh
         run: ./desplegar.PS1 -RutaPHP 'php'
       - name: Guardar version preparada
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: version-preparada
           path: pruebas/index.php
