@@ -5,7 +5,7 @@ param(
 $archivoOrigen = Join-Path $PSScriptRoot 'ORIGEN\INDEX.PHP'
 $aechivoDestino = Join-Path $PSScriptRoot 'PRUEBAS\INDEX.PHP'
 
-php -l $archivoOrigen
+& $RutaPHP -l $archivoOrigen
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Hay un error de sintaxis. No se publicó el cambio."

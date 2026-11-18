@@ -23,7 +23,7 @@ jobs:
           coverage: none
       - name: Ejecutar script
         shell: pwsh
-        run: ./despliegue.ps1 -RutaPHP 'php'
+        run: ./desplegar.PS1 -RutaPHP 'php'
       - name: Guardar version preparada
         uses: actions/upload-artifact@v3
         with:
